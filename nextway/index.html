@@ -300,5 +300,29 @@
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>   
     <script src="assets/owl.carousel-2/owl.carousel.min.js"></script>
     <script src="js/custom.js"></script>
+	<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAFYqvCUzrnBXVoEVUzuQTQpM2NI7cF950",
+    authDomain: "nextwayservices-b30c7.firebaseapp.com",
+    databaseURL: "https://nextwayservices-b30c7-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "nextwayservices-b30c7",
+    storageBucket: "nextwayservices-b30c7.appspot.com",
+    messagingSenderId: "428759487041",
+    appId: "1:428759487041:web:ce92da6f93d0f546f12cc0",
+    measurementId: "G-BSFVD3SHR4"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
   </body>
 </html>
